@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Contact and Survey Form</title>
+</head>
+
+<body>
+
+    <section>
+        <h1>Get in Touch!</h1>
+        <p>Feel free to reach out with any questions or feedback using the form below.</p>
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>Contact Form Section</legend>
+
+                <label>
+                    Name:<br />
+                    <input type="text" name="name" maxlength="30" />
+                </label><br />
+
+                <label>
+                    Email:<br />
+                    <input type="email" name="email" />
+                </label><br />
+
+                <label>
+                    Password:<br />
+                    <input type="password" name="password" maxlength="10" />
+                </label>
+
+                <p>
+                    Subject:
+                    <br />
+                    <select name="options" size="3" multiple="multiple">
+                        <option value="general-inquiry">General Inquiry</option>
+                        <option value="project-collaboration">Project Collaboration</option>
+                        <option value="others">Others</option>
+                    </select>
+                </p>
+
+                <p>
+                    Write a message:
+                    <br />
+                    <textarea name="comment" cols="20" rows="4"></textarea>
+                </p>
+
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+
+            </fieldset>
+    </section>
+    <br />
+
+    <section>
+        <h1>Quick Survey</h1>
+        <p>Your feedback on my portfolio would be greatly appreciated. Please take a moment to answer a few questions.</p>
+        <fieldset>
+            <legend>Survey Section</legend>
+
+            <p>
+                Question 1: How did you find my portfolio?
+                <br />
+                <select name="options" size="4" multiple="multiple">
+                    <option value="google-search">Google Search</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="referrals">Referrals</option>
+                    <option value="others">Others</option>
+                </select>
+            </p>
+
+            <p>
+                Question 2: Rate your overall experience on my site.
+                <br />
+                <input type="radio" name="rating" value="1" checked="checked" /> 1
+                <input type="radio" name="rating" value="2" /> 2
+                <input type="radio" name="rating" value="3" /> 3
+                <input type="radio" name="rating" value="4" /> 4
+                <input type="radio" name="rating" value="5" /> 5
+            </p>
+
+            <p>
+                Question 3: Any additional comments?
+                <br />
+                <textarea name="comment" cols="20" rows="4"></textarea>
+            </p>
+
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </fieldset>
+    </section>
+
+</form>
+</body>
+
+</html>
