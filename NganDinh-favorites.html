@@ -1,50 +1,140 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <title>My Favorite Games, Movies, and Music</title>
+    <title>My Favorite Games, Movies, and Music</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #3e3a3a;
+            color: #ff69b4;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #3e3a3a;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ff69b4;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #f4cee7;
+        }
+
+        h1, h2, h3 {
+            color: #ff69b4;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #000000;
+        }
+
+        footer {
+            background-color: #3e3a3a;
+            color: #fdfdfd;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        dl {
+            font-size: 1.2em;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 
 <body>
-  <h1>My Favorite Games, Movies, and Music</h1>
-  <p><a href="#games">Games</a> | <a href="#movies">Movies</a> | <a href="#music">Music</a></p>
+    <header>
+        <h1>My Favorite Games, Movies, and Music</h1>
+    </header>
 
-  <h2 id="intro">
-    <p><i>Welcome to my little world where I share some of my all-time favorite games, movies, and music. These are the things that have shaped my interests and brought me countless hours of joy. I hope you enjoy exploring these personal favorites as much as I do!</i></p>
-    <p>Let me walk you through my top selections in each category and share why they’re meaningful to me.</p>
-  </h2>
+    <nav>
+        <a href="#games">Games</a> | 
+        <a href="#movies">Movies</a> | 
+        <a href="#music">Music</a>
+    </nav>
 
-  <h2 id="games">
-    <h3>Favorite Games</h3>
-    <p>These are the games I’ve enjoyed the most. *Pokémon Unite* offers fast-paced team battles, while *Pokémon Go* lets me explore and catch Pokémon in the real world. *League of Legends* challenges my teamwork and strategy with its competitive gameplay.</p>
-    <ol>
-      <li>Pokémon Unite</li>
-      <li>Pokémon Go</li>
-      <li>League of Legends</li>
-    </ol>
-  </h2>
+    <main>
+        <section id="intro">
+            <h2>Welcome to My World</h2>
+            <p><i>Welcome to my little world where I share some of my all-time favorite games, movies, and music. These are the things that have shaped my interests and brought me countless hours of joy. I hope you enjoy exploring these personal favorites as much as I do!</i></p>
+            <p>Let me walk you through my top selections in each category and share why they’re meaningful to me.</p>
+        </section>
 
-  <h2 id="movies">
-    <h3>Favorite Movies</h3>
-    <p>Movies like *The Split*, *Squid Game*, and *A Quiet Place* stand out for their thrilling plots and emotional impact. Each keeps me on edge with unexpected twists, high stakes, and unique storytelling, exploring human nature in extreme circumstances. These films stay with me long after the credits roll.</p>
-    <ul>
-      <li>The Split</li>
-      <li>Squid Game</li>
-      <li>A Quiet Place</li>
-    </ul>
-  </h2>
+        <section id="games">
+            <h2>Favorite Games</h2>
+            <p>These are the games I’ve enjoyed the most. *Pokémon Unite* offers fast-paced team battles, while *Pokémon Go* lets me explore and catch Pokémon in the real world. *League of Legends* challenges my teamwork and strategy with its competitive gameplay.</p>
+            <ol>
+                <li>Pokémon Unite</li>
+                <li>Pokémon Go</li>
+                <li>League of Legends</li>
+            </ol>
+        </section>
 
-  <h2 id="music">
-    <h3>Favorite Music</h3>
-    <p>I enjoy music that has depth and emotion, the kind that really makes you reflect. Whether it’s through soulful lyrics or intricate melodies, I find myself drawn to songs that speak to my heart. Below are my top 3:</p>
-    <dl>
-      <dt>Million Years Ago</dt>
-      <dd>By Adele – A soulful ballad that reflects on nostalgia and the passage of time. Its heartfelt lyrics, combined with her powerful vocals, evoke deep emotion and a sense of introspection.</dd>
-      <dt>Someone Like You</dt>
-      <dd>By Adele – A poignant ballad about heartbreak and unrequited love.</dd>
-      <dt>APT</dt>
-      <dd>By Bruno Mars and Rosé (BlackPink) – A beautiful and catchy melody with smooth, soulful vocals that blend perfectly.</dd>
-    </dl>
-  </h2>
+        <section id="movies">
+            <h2>Favorite Movies</h2>
+            <p>Movies like *The Split*, *Squid Game*, and *A Quiet Place* stand out for their thrilling plots and emotional impact. Each keeps me on edge with unexpected twists, high stakes, and unique storytelling, exploring human nature in extreme circumstances. These films stay with me long after the credits roll.</p>
+            <ul>
+                <li>The Split</li>
+                <li>Squid Game</li>
+                <li>A Quiet Place</li>
+            </ul>
+        </section>
+
+        <section id="music">
+            <h2>Favorite Music</h2>
+            <p>I enjoy music that has depth and emotion, the kind that really makes you reflect. Whether it’s through soulful lyrics or intricate melodies, I find myself drawn to songs that speak to my heart. Below are my top 3:</p>
+            <dl>
+                <dt>Million Years Ago</dt>
+                <dd>By Adele – A soulful ballad that reflects on nostalgia and the passage of time. Its heartfelt lyrics, combined with her powerful vocals, evoke deep emotion and a sense of introspection.</dd>
+                <dt>Someone Like You</dt>
+                <dd>By Adele – A poignant ballad about heartbreak and unrequited love.</dd>
+                <dt>APT</dt>
+                <dd>By Bruno Mars and Rosé (BlackPink) – A beautiful and catchy melody with smooth, soulful vocals that blend perfectly.</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Favorite Things. All rights reserved.</p>
+    </footer>
+
 </body>
-
 </html>
