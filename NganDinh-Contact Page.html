@@ -1,96 +1,205 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 <head>
     <title>Contact and Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #3e3a3a;
+            color: #ff69b4;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #3e3a3a;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ff69b4;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+
+        article {
+            background-color: #ffb6c1;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ff69b4;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #000000;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #3e3a3a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #ff69b4;
+        }
+
+        footer {
+            background-color: #3e3a3a;
+            color: #fdfdfd;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
 
-    <section>
+    <header>
         <h1>Get in Touch!</h1>
         <p>Feel free to reach out with any questions or feedback using the form below.</p>
-        <form action="#" method="GET">
-            <fieldset>
-                <legend>Contact Form Section</legend>
+    </header>
 
-                <label>
-                    Name:<br />
-                    <input type="text" name="name" maxlength="30" />
-                </label><br />
+    <main>
+        <section>
+            <article>
+                <form action="#" method="GET">
+                    <fieldset>
+                        <legend>Contact Form Section</legend>
 
-                <label>
-                    Email:<br />
-                    <input type="email" name="email" />
-                </label><br />
+                        <label>
+                            Name:
+                            <input type="text" name="name" maxlength="30" />
+                        </label>
 
-                <label>
-                    Password:<br />
-                    <input type="password" name="password" maxlength="10" />
-                </label>
+                        <label>
+                            Email:
+                            <input type="email" name="email" />
+                        </label>
 
-                <p>
-                    Subject:
-                    <br />
-                    <select name="options" size="3" multiple="multiple">
-                        <option value="general-inquiry">General Inquiry</option>
-                        <option value="project-collaboration">Project Collaboration</option>
-                        <option value="others">Others</option>
-                    </select>
-                </p>
+                        <label>
+                            Password:
+                            <input type="password" name="password" maxlength="10" />
+                        </label>
 
-                <p>
-                    Write a message:
-                    <br />
-                    <textarea name="comment" cols="20" rows="4"></textarea>
-                </p>
+                        <p>
+                            Subject:
+                            <select name="options" size="3" multiple="multiple">
+                                <option value="general-inquiry">General Inquiry</option>
+                                <option value="project-collaboration">Project Collaboration</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </p>
 
-                <input type="submit" value="Submit" />
-                <input type="reset" value="Reset" />
+                        <p>
+                            Write a message:
+                            <textarea name="comment" cols="20" rows="4"></textarea>
+                        </p>
 
-            </fieldset>
-    </section>
-    <br />
+                        <input type="submit" value="Submit" />
+                        <input type="reset" value="Reset" />
+                    </fieldset>
+                </form>
+            </article>
+        </section>
 
-    <section>
-        <h1>Quick Survey</h1>
-        <p>Your feedback on my portfolio would be greatly appreciated. Please take a moment to answer a few questions.</p>
-        <fieldset>
-            <legend>Survey Section</legend>
+        <section>
+            <article>
+                <h1>Quick Survey</h1>
+                <p>Your feedback on my portfolio would be greatly appreciated. Please take a moment to answer a few questions.</p>
+                <fieldset>
+                    <legend>Survey Section</legend>
 
-            <p>
-                Question 1: How did you find my portfolio?
-                <br />
-                <select name="options" size="4" multiple="multiple">
-                    <option value="google-search">Google Search</option>
-                    <option value="social-media">Social Media</option>
-                    <option value="referrals">Referrals</option>
-                    <option value="others">Others</option>
-                </select>
-            </p>
+                    <p>
+                        Question 1: How did you find my portfolio?
+                        <select name="options" size="4" multiple="multiple">
+                            <option value="google-search">Google Search</option>
+                            <option value="social-media">Social Media</option>
+                            <option value="referrals">Referrals</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </p>
 
-            <p>
-                Question 2: Rate your overall experience on my site.
-                <br />
-                <input type="radio" name="rating" value="1" checked="checked" /> 1
-                <input type="radio" name="rating" value="2" /> 2
-                <input type="radio" name="rating" value="3" /> 3
-                <input type="radio" name="rating" value="4" /> 4
-                <input type="radio" name="rating" value="5" /> 5
-            </p>
+                    <p>
+                        Question 2: Rate your overall experience on my site.
+                        <input type="radio" name="rating" value="1" checked="checked" /> 1
+                        <input type="radio" name="rating" value="2" /> 2
+                        <input type="radio" name="rating" value="3" /> 3
+                        <input type="radio" name="rating" value="4" /> 4
+                        <input type="radio" name="rating" value="5" /> 5
+                    </p>
 
-            <p>
-                Question 3: Any additional comments?
-                <br />
-                <textarea name="comment" cols="20" rows="4"></textarea>
-            </p>
+                    <p>
+                        Question 3: Any additional comments?
+                        <textarea name="comment" cols="20" rows="4"></textarea>
+                    </p>
 
-            <input type="submit" value="Submit" />
-            <input type="reset" value="Reset" />
-        </fieldset>
-    </section>
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                </fieldset>
+            </article>
+        </section>
+    </main>
 
-</form>
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
 </body>
-
 </html>
