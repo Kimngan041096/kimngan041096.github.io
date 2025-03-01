@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html>
 <head>
     <title>Upcoming Deadlines/Exam and My Next Week Schedule</title>
@@ -6,8 +7,31 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #3e3a3a;
+            color: #ff69b4;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
             padding: 20px;
-            background-color: #f4f4f9;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+
+        article {
+            background-color: #ffb6c1;
+            padding: 20px;
+            margin-top: 20px;
         }
 
         table {
@@ -41,103 +65,136 @@
             background-color: #f1f1f1;
         }
 
-        div {
-            background-color: lightpink;
-            width: fit-content;
-            padding: 16px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            text-align: center;
+        h1 {
+            font-size: 2.5em;
+            color: #ff69b4;
         }
 
-        h1 {
-            color: #333;
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        footer {
+            background-color: #3e3a3a;
+            color: #fdfdfd;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #000000;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h1>My Weekly Schedule</h1>
-        <table>
-            <caption>My Weekly Class and Activity Schedule</caption>
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Morning</td>
-                    <td colspan="4">Class</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td>Afternoon</td>
-                    <td colspan="2">Go to Honda Dealer for Service Recall</td>
-                    <td colspan="2">Study for Exam</td>
-                    <td>Gym</td>
-                </tr>
-                <tr>
-                    <td>Evening</td>
-                    <td>Teeth Appointment</td>
-                    <td>Class</td>
-                    <td>Hang out with BFF</td>
-                    <td>Shopping</td>
-                    <td>Prep Meal</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div>
-        <h1>Upcoming Deadlines and Exams</h1>
-        <table>
-            <caption>Important Deadlines and Exams</caption>
-            <thead>
-                <tr>
-                    <th>Course</th>
-                    <th>Task</th>
-                    <th>Due Date</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="3">Programming Logic and Design</td>
-                    <td>Chapter 2 Discussion</td>
-                    <td>Feb 21, 2025</td>
-                    <td>In Progress</td>
-                </tr>
-                <tr>
-                    <td>Service Charge Project</td>
-                    <td>Feb 22, 2025</td>
-                    <td>Done</td>
-                </tr>
-                <tr>
-                    <td>Exam 1</td>
-                    <td>Feb 23, 2025</td>
-                    <td>Pending</td>
-                </tr>
-                <tr>
-                    <td>Personal Hardware Computer</td>
-                    <td>Chapter 3 Study Guide Part 1</td>
-                    <td>Feb 18, 2025</td>
-                    <td>Pending</td>
-                </tr>
-                <tr>
-                    <td>C++ Programming</td>
-                    <td>Banking System Project</td>
-                    <td>Feb 19, 2025</td>
-                    <td>Not Started</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</body>
+    <header>
+        <h1>Upcoming Deadlines/Exam and My Next Week Schedule</h1>
+    </header>
+    
+    <main>
+        <section>
+            <header>
+                <h2>My Weekly Schedule</h2>
+            </header>
+            <article>
+                <table>
+                    <caption>My Weekly Class and Activity Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Morning</td>
+                            <td colspan="4">Class</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <td>Afternoon</td>
+                            <td colspan="2">Go to Honda Dealer for Service Recall</td>
+                            <td colspan="2">Study for Exam</td>
+                            <td>Gym</td>
+                        </tr>
+                        <tr>
+                            <td>Evening</td>
+                            <td>Teeth Appointment</td>
+                            <td>Class</td>
+                            <td>Hang out with BFF</td>
+                            <td>Shopping</td>
+                            <td>Prep Meal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
 
+        <section>
+            <header>
+                <h2>Upcoming Deadlines and Exams</h2>
+            </header>
+            <article>
+                <table>
+                    <caption>Important Deadlines and Exams</caption>
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Task</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Programming Logic and Design</td>
+                            <td>Chapter 2 Discussion</td>
+                            <td>Feb 21, 2025</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>Service Charge Project</td>
+                            <td>Feb 22, 2025</td>
+                            <td>Done</td>
+                        </tr>
+                        <tr>
+                            <td>Exam 1</td>
+                            <td>Feb 23, 2025</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>Personal Hardware Computer</td>
+                            <td>Chapter 3 Study Guide Part 1</td>
+                            <td>Feb 18, 2025</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>C++ Programming</td>
+                            <td>Banking System Project</td>
+                            <td>Feb 19, 2025</td>
+                            <td>Not Started</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 My Schedule App. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
