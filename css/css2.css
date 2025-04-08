@@ -1,0 +1,88 @@
+/* Global Reset */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #665544;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #f3e1f3;  /* Light pastel pink background */
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2rem;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Grid Layout */
+.container_12 {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid_12 {
+    width: 960px; /* Full width of the container */
+    margin: 0 auto;
+}
+
+.grid_4 {
+    width: 32%; /* Each item takes up 4 out of 12 columns */
+    margin-right: 2%;
+    margin-bottom: 20px;
+    float: left;
+    background-color: #f9e3f9;  /* Light pastel pink box */
+    border: 2px solid hotpink;  /* Hot pink border for the box */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.grid_4 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.grid_4 h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.grid_4 p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Clearfix to ensure no float issues */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+footer {
+    background-color: #efefef;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .grid_4 {
+        width: 100%; /* Full width for small screens */
+        margin-right: 0;
+    }
+}
